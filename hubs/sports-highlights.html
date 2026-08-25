@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Highlights — Scores, Results & Analysis — TrendVault</title>
+    <meta name="description" content="Daily sports coverage including live scores, match highlights, tournament updates, and expert analysis across football, basketball, tennis, and more.">
+    <meta name="keywords" content="sports news, football, basketball, tennis, soccer scores, live results, match highlights, tournament coverage">
+    
+    <style>
+        :root { --primary: #6d4aff; --secondary: #2c1a9e; --text: #333; --bg: #fafafa; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: var(--text); background: var(--bg); }
+        
+        header { background: var(--white); padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--primary); font-size: 1.5rem; font-weight: 800; text-decoration: none; }
+        .back-link { color: var(--primary); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+        
+        .article-container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+        
+        .category-badge { display: inline-block; background: var(--primary); color: white; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; margin-bottom: 1rem; }
+        
+        h1 { font-size: 2.2rem; color: #1a1a1a; margin-bottom: 0.5rem; line-height: 1.3; }
+        .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+        
+        .article-body p { margin-bottom: 1.5rem; font-size: 1.05rem; color: #444; }
+        .article-body h2 { color: var(--primary); margin: 2rem 0 1rem; font-size: 1.4rem; }
+        .article-body ul { margin: 1rem 0 1.5rem 2rem; }
+        .article-body li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #444; }
+        
+        .highlight-box { background: linear-gradient(135deg, #f0ebff, #e8e0ff); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
+        .highlight-box h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .highlight-box p { margin: 0; font-size: 1rem; color: #555; }
+        
+        .match-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .match-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary); }
+        .match-card h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .match-card p { color: #666; font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .score { font-size: 1.2rem; font-weight: 700; color: #333; margin: 0.5rem 0; }
+        .match-date { color: #888; font-size: 0.85rem; }
+        
+        .sources { margin: 2rem 0; padding: 1.5rem; background: #f9f9f9; border-radius: 8px; }
+        .sources h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.1rem; }
+        .sources a { color: var(--primary); text-decoration: none; display: block; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .sources a:hover { text-decoration: underline; }
+        
+        .related { margin: 3rem 0; }
+        .related h2 { color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none; }
+        .related-card h4 { color: var(--primary); font-size: 0.95rem; margin-bottom: 0.3rem; }
+        .related-card p { color: #888; font-size: 0.85rem; }
+        
+        .ad-slot { width: 100%; min-height: 90px; background: #f0f0f0; border: 1px dashed #ccc; margin: 2rem 0; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.85rem; border-radius: 4px; }
+        
+        footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+        footer a { color: #bbb; text-decoration: none; margin: 0 0.5rem; }
+        
+        @media (max-width: 768px) { h1 { font-size: 1.6rem; } .article-body p { font-size: 1rem; } .match-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="../index.html" class="logo">TrendVault</a>
+            <a href="../index.html" class="back-link">Back to Home</a>
+        </div>
+    </header>
+    
+    <div class="article-container">
+        <span class="category-badge">Sports & Competition</span>
+        
+        <h1>Sports Highlights — Scores, Results & Expert Analysis</h1>
+        
+        <p class="meta">
+            Last Updated: August 21, 2026 • Daily Sports Coverage
+        </p>
+        
+        <div class="ad-slot">Adsterra 728x90 Banner</div>
+        
+        <div class="article-body">
+            <p>Welcome to TrendVault's <strong>Sports Hub</strong> — your ultimate destination for live scores, match highlights, tournament updates, and expert analysis across football, basketball, tennis, rugby, and more. Stay informed with comprehensive sports coverage.</p>
+            
+            <div class="highlight-box">
+                <h3>🏆 Featured Today</h3>
+                <p>Little League World Series finals | Premier League kickoff dates | Tennis US Open draw announced | Rugby World Cup qualifiers</p>
+            </div>
+            
+            <h2>Top Sports Stories This Week</h2>
+            
+            <div class="match-grid">
+                <article class="match-card">
+                    <h3>Little League World Series Finals</h3>
+                    <div class="score">Australia vs Panama — LIVE</div>
+                    <p>Championship game continues in Williamsport. Eight teams competed this week with $100K+ prize pool on the line.</p>
+                    <span class="match-date">August 21, 2026</span>
+                </article>
+                
+                <article class="match-card">
+                    <h3>Premier League Season Preview</h3>
+                    <div class="score">August 22 — Opening Weekend</div>
+                    <p>All 20 teams ready for new season. Manchester City defend title while Chelsea and Arsenal aim for revival.</p>
+                    <span class="match-date">August 20, 2026</span>
+                </article>
+                
+                <article class="match-card">
+                    <h3>US Open Tennis Draw</h3>
+                    <div class="score">September 2-10</div>
+                    <p>Draw ceremony completed. Top seeds: Djokovic, Swiatek, Alcaraz, Gauff all placed in favorable brackets.</p>
+                    <span class="match-date">August 19, 2026</span>
+                </article>
+                
+                <article class="match-card">
+                    <h3>Rugby Championship Update</h3>
+                    <div class="score">South Africa vs New Zealand</div>
+                    <p>Historic rivalry renewed. All Blacks travel to Cape Town for crucial pool stage matchup.</p>
+                    <span class="match-date">August 21, 2026</span>
+                </article>
+                
+                <article class="match-card">
+                    <h3>NBA Free Agency Tracker</h3>
+                    <div class="score">Signings Continue</div>
+                    <p>Lakers, Warriors, and Suns pursue star players. Multiple trades expected before deadline.</p>
+                    <span class="match-date">August 18, 2026</span>
+                </article>
+                
+                <article class="match-card">
+                    <h3>F1 Grand Prix Preview</h3>
+                    <div class="score">Belgian GP — Spa-Francorchamps</div>
+                    <p>Verstappen aims for 7th win of season. Ferrari brings upgrades hoping to close gap.</p>
+                    <span class="match-date">August 20, 2026</span>
+                </article>
+            </div>
+            
+            <div class="ad-slot">Adsterra Native Ad</div>
+            
+            <h2>Upcoming Major Events</h2>
+            
+            <ul>
+                <li><strong>August 27:</strong> WWE SummerSlam — Detroit</li>
+                <li><strong>September 5:</strong> US Open Quarterfinals</li>
+                <li><strong>September 15:</strong> NFL Week 1 Kickoff</li>
+                <li><strong>October 10:</strong> World Series (MLB Finals)</li>
+                <li><strong>November 20:</strong> FIFA Club World Cup Final</li>
+            </ul>
+            
+            <h2>Why Follow Sports News?</h2>
+            
+            <p>Staying informed about sports helps you:</p>
+            
+            <ul>
+                <li><strong>Never miss action:</strong> Know schedules, results, and standings</li>
+                <li><strong>Join fan communities:</strong> Discuss matches with fellow supporters</li>
+                <li><strong>Understand betting odds:</strong> Make informed decisions (if applicable)</li>
+                <li><strong>Track favorite athletes:</strong> Follow career milestones and achievements</li>
+                <li><strong>Plan viewing parties:</strong> Coordinate with friends for big games</li>
+            </ul>
+            
+            <div class="ad-slot">Adsterra 728x90 Banner</div>
+            
+            <h2>Sports Betting Guidelines</h2>
+            
+            <ul>
+                <li><strong>Research thoroughly:</strong> Analyze team stats, injuries, and weather conditions</li>
+                <li><strong>Set budgets:</strong> Never bet more than you can afford to lose</li>
+                <li><strong>Shop for lines:</strong> Different sportsbooks offer varying odds</li>
+                <li><strong>Avoid emotional betting:</strong> Don't bet on your favorite team blindly</li>
+                <li><strong>Know when to stop:</strong> Responsible gambling is essential</li>
+            </ul>
+            
+            <div class="sources">
+                <h3>Sources & Resources</h3>
+                <a href="https://www.espn.com/" target="_blank" rel="noopener">&rarr; ESPN — Comprehensive Sports Coverage</a>
+                <a href="https://www.skysports.com/" target="_blank" rel="noopener">&rarr; Sky Sports — Football & Premier League</a>
+                <a href="https://www.nbcsports.com/" target="_blank" rel="noopener">&rarr; NBC Sports — Live Scores & Highlights</a>
+                <a href="https://bleacherreport.com/" target="_blank" rel="noopener">&rarr; Bleacher Report — Breaking Sports News</a>
+            </div>
+        </div>
+        
+        <div class="related">
+            <h2>Related Hubs</h2>
+            <div class="related-grid">
+                <a href="../hubs/gaming-updates.html" class="related-card">
+                    <h4>Gaming Updates</h4>
+                    <p>Esports, releases, reviews</p>
+                </a>
+                <a href="../index.html" class="related-card">
+                    <h4>Today's Trends</h4>
+                    <p>Browse trending topics</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>2026 TrendVault — All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>
