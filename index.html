@@ -1,131 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrendVault — Daily Trending Topics</title>
-    <meta name="description" content="Stay updated with today's hottest trends across news, crypto, tech, and more. Updated hourly for maximum engagement.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendVault - Top Daily Trends & Evergreen Insights</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
     
-    <!-- Adsterra Scripts — استبدلي هذه بالمفاتيح الحقيقية من حسابك -->
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'YOUR_Adsterra_BANNER_KEY',
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .ad-slot {
+      width: 728px;
+      height: 90px;
+      margin: 20px auto;
+      background-color: #eee;
+      border: 1px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .article-header {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .article-body {
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .article-body p {
+      margin-bottom: 15px;
+    }
+    
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- 📍 إعلان بانر علوي - Adsterra 728×90 -->
+  <div class="ad-slot">
+    <script>
+      atOptions = {
+        'key' : '4bbcc74b0633e3b922905cf08e41dcfd',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/4bbcc74b0633e3b922905cf08e41dcfd/invoke.js"></script>
+  </div>
+  
+  <header>
+    <h1>TrendVault</h1>
+    <p>Your Gateway to Today's Top Trends & Evergreen Insights</p>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Trend #1</a>
+      <a href="#">Trend #2</a>
+      <a href="#">Trend #3</a>
+      <a href="#">Hub #1</a>
+      <a href="#">Hub #2</a>
+      <a href="#">Hub #3</a>
+      <a href="#">Hub #4</a>
+      <a href="#">Hub #5</a>
+      <a href="#">Premium Access</a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <!-- 📍 إعلان وسطي - Native Ad (سنضيفه لاحقاً) -->
+    <div class="ad-slot">Native Ad Placeholder</div>
+    
+    <div class="article-body">
+      <h2>Welcome to TrendVault</h2>
+      <p>Your curated destination for daily trending topics and evergreen insights that matter.</p>
+      
+      <h3>Today's Featured Trends:</h3>
+      <ul>
+        <li>🔥 AI-Powered Content Creation Tools</li>
+        <li>💰 Crypto Payment Integration for Small Businesses</li>
+        <li>🌱 Sustainable Fashion Movement 2026</li>
+      </ul>
+      
+      <p>Stay ahead of the curve with our daily updated trend reports and evergreen content hubs designed to keep you informed.</p>
+      
+      <!-- 📍 إعلان سفلي - Adsterra 728×90 -->
+      <div class="ad-slot">
+        <script>
+          atOptions = {
+            'key' : '4bbcc74b0633e3b922905cf08e41dcfd',
             'format' : 'iframe',
             'height' : 90,
             'width' : 728,
             'params' : {}
-        };
-    </script>
-    
-    <style>
-        :root { --primary: #6d4aff; --secondary: #2c1a9e; --text: #333; --bg: #fafafa; --white: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
-        
-        header { background: var(--white); padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        h1 { color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem; }
-        .tagline { color: #666; font-size: 0.95rem; }
-        
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
-        .section-title { font-size: 1.5rem; margin: 2.5rem 0 1.5rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        
-        .card { background: var(--white); border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; }
-        .card:hover { transform: translateY(-6px); box-shadow: 0 8px 24px rgba(109,74,255,0.15); }
-        .card h3 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.2rem; }
-        .card p { color: #666; margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.5; }
-        .card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #888; }
-        .card-tag { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; text-decoration: none; }
-        
-        .ad-banner { width: 100%; height: 90px; background: #f0f0f0; border: 1px dashed #ccc; margin: 2rem 0; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.9rem; }
-        .ad-native { max-width: 600px; margin: 2rem auto; background: #f9f9f9; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary); }
-        
-        footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
-        footer a { color: #bbb; text-decoration: none; margin: 0 0.5rem; }
-        footer a:hover { color: white; }
-        
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 1.6rem; } }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>🔥 TrendVault</h1>
-        <p class="tagline">Today's Hottest Trends — Updated Daily</p>
-    </header>
-    
-    <div class="container">
-        <div class="ad-banner">
-            <!-- ضع كود Adsterra Banner 728x90 هنا -->
-            Adsterra Banner Advertisement
-        </div>
-        
-<h2 class="section-title">Today's Top Trends</h2>
-<div class="grid">
-    <article class="card" onclick="window.location.href='trending/bitcoin-treasury-rally-2026.html'">
-        <h3>Bitcoin Surges Past $78K in Fresh Rally</h3>
-        <p>Treasury repurchase and CLARITY Act push fuel Bitcoin's $14K weekly gain.</p>
-        <div class="card-meta">
-            <span>Aug 21, 2026</span>
-            <a href="trending/bitcoin-treasury-rally-2026.html" class="card-tag">Crypto</a>
-        </div>
-    </article>
-    
-    <article class="card" onclick="window.location.href='trending/gtav6-leaks-subpoena-2026.html'">
-        <h3>GTA 6 Leaks: Take-Two Subpoenas Tech Giants</h3>
-        <p>Legal action against Microsoft, Discord, GitHub over stolen gameplay footage.</p>
-        <div class="card-meta">
-            <span>Aug 21, 2026</span>
-            <a href="trending/gtav6-leaks-subpoena-2026.html" class="card-tag">Gaming</a>
-        </div>
-    </article>
-    
-    <article class="card" onclick="window.location.href='trending/apple-vision-pro-layoffs-2026.html'">
-        <h3>Apple Lays Off 60 Vision Pro Employees</h3>
-        <p>Company shifts focus from VR headsets to smart glasses and AI initiatives.</p>
-        <div class="card-meta">
-            <span>Aug 21, 2026</span>
-            <a href="trending/apple-vision-pro-layoffs-2026.html" class="card-tag">Tech</a>
-        </div>
-    </article>
-</div>
-
-<h2 class="section-title">Evergreen Hubs</h2>
-<div class="grid">
-    <article class="card" onclick="window.location.href='hubs/crypto-market.html'">
-        <h3>Crypto Market Today</h3>
-        <p>Daily Bitcoin, Ethereum, and altcoin prices with market analysis.</p>
-        <span class="card-tag">Permanent</span>
-    </article>
-    
-    <article class="card" onclick="window.location.href='hubs/tech-news.html'">
-        <h3>Tech News Hub</h3>
-        <p>AI, gadgets, startups, and innovation coverage.</p>
-        <span class="card-tag">Permanent</span>
-    </article>
-    
-    <article class="card" onclick="window.location.href='hubs/gaming-updates.html'">
-        <h3>Gaming Updates</h3>
-        <p>Esports, releases, reviews, and tournament coverage.</p>
-        <span class="card-tag">Permanent</span>
-    </article>
-    
-    <article class="card" onclick="window.location.href='hubs/health-wellness.html'">
-        <h3>Health & Wellness</h3>
-        <p>Medical news, fitness tips, and wellness guides.</p>
-        <span class="card-tag">Permanent</span>
-    </article>
-    
-    <article class="card" onclick="window.location.href='hubs/sports-highlights.html'">
-        <h3>Sports Highlights</h3>
-        <p>Scores, results, tournaments, and expert analysis.</p>
-        <span class="card-tag">Permanent</span>
-    </article>
-</div>
+          };
+        </script>
+        <script src="https://www.highrevenueformat.com/4bbcc74b0633e3b922905cf08e41dcfd/invoke.js"></script>
+      </div>
+    </div>
     
     <footer>
-        <p>&copy; 2026 TrendVault — All Rights Reserved</p>
-        <p><a href="#">Privacy Policy</a> • <a href="#">Contact</a></p>
+      <p>&copy; 2026 TrendVault. All rights reserved.</p>
+      <p>Contact: galyaglaa@proton.me</p>
     </footer>
+  </div>
 </body>
 </html>
