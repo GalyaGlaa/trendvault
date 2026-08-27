@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,167 @@
             'format' : 'iframe',
             'height' : 90,
             'width' : 728,
-            'params' : {}
+            'params' : {}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendVault — Daily Trending Topics</title>
+    <meta name="description" content="Stay updated with today's hottest trends across news, crypto, tech, and more. Updated hourly for maximum engagement.">
+    
+    <style>
+        :root { --primary: #6d4aff; --secondary: #2c1a9e; --text: #333; --bg: #fafafa; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+        
+        header { background: var(--white); padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        h1 { color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem; }
+        .tagline { color: #666; font-size: 0.95rem; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        .section-title { font-size: 1.5rem; margin: 2.5rem 0 1.5rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        
+        .card { background: var(--white); border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer; }
+        .card:hover { transform: translateY(-6px); box-shadow: 0 8px 24px rgba(109,74,255,0.15); }
+        .card h3 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.2rem; }
+        .card p { color: #666; margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.5; }
+        .card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #888; }
+        .card-tag { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; text-decoration: none; }
+        
+        .ad-banner-wrapper { width: 100%; display: flex; justify-content: center; margin: 2rem 0; overflow-x: auto; }
+        .ad-banner-desktop { display: block; }
+        .ad-banner-mobile { display: none; }
+        .ad-native { max-width: 600px; margin: 2rem auto; background: #f9f9f9; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary); }
+
+        /* على الشاشات الصغيرة: إخفاء بانر الديسكتوب 728x90 وإظهار بانر الموبايل 320x50 */
+        @media (max-width: 768px) {
+            .ad-banner-desktop { display: none; }
+            .ad-banner-mobile { display: block; }
+        }
+        
+        footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+        footer a { color: #bbb; text-decoration: none; margin: 0 0.5rem; }
+        footer a:hover { color: white; }
+        
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔥 TrendVault</h1>
+        <p class="tagline">Today's Hottest Trends — Updated Daily</p>
+    </header>
+    
+    <div class="container">
+        <div class="ad-banner-wrapper">
+            <!-- بانر الديسكتوب 728x90 — يظهر فقط على الشاشات الأكبر من 768px -->
+            <div class="ad-banner-desktop">
+                <script>
+                    atOptions = {
+                        'key' : '4bbcc74b0633e3b922905cf08e41dcfd',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highrevenueformat.com/4bbcc74b0633e3b922905cf08e41dcfd/invoke.js"></script>
+            </div>
+
+            <!-- بانر الموبايل 320x50 — أنشئي Ad Unit جديد بحجم 320x50 من لوحة Adsterra
+                 وضعي مفتاحه الخاص هنا بدل المفتاح الحالي (لا تستخدمي نفس مفتاح الديسكتوب) -->
+            <div class="ad-banner-mobile">
+                <script>
+                    atOptions = {
+                        'key' : 'YOUR_MOBILE_320x50_KEY',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highrevenueformat.com/YOUR_MOBILE_320x50_KEY/invoke.js"></script>
+            </div>
+        </div>
+
+        <!-- Native Banner — أنشئي Ad Unit من نوع Native من لوحة Adsterra وضعي كوده هنا -->
+        <div class="ad-native">
+            <script async="async" data-cfasync="false" src="//pl_NATIVE_BANNER_KEY/invoke.js"></script>
+            <div id="container-NATIVE_BANNER_KEY"></div>
+        </div>
+        
+<h2 class="section-title">Today's Top Trends</h2>
+<div class="grid">
+    <article class="card" onclick="window.location.href='trending/bitcoin-treasury-rally-2026.html'">
+        <h3>Bitcoin Surges Past $78K in Fresh Rally</h3>
+        <p>Treasury repurchase and CLARITY Act push fuel Bitcoin's $14K weekly gain.</p>
+        <div class="card-meta">
+            <span>Aug 21, 2026</span>
+            <a href="trending/bitcoin-treasury-rally-2026.html" class="card-tag">Crypto</a>
+        </div>
+    </article>
+    
+    <article class="card" onclick="window.location.href='trending/gtav6-leaks-subpoena-2026.html'">
+        <h3>GTA 6 Leaks: Take-Two Subpoenas Tech Giants</h3>
+        <p>Legal action against Microsoft, Discord, GitHub over stolen gameplay footage.</p>
+        <div class="card-meta">
+            <span>Aug 21, 2026</span>
+            <a href="trending/gtav6-leaks-subpoena-2026.html" class="card-tag">Gaming</a>
+        </div>
+    </article>
+    
+    <article class="card" onclick="window.location.href='trending/apple-vision-pro-layoffs-2026.html'">
+        <h3>Apple Lays Off 60 Vision Pro Employees</h3>
+        <p>Company shifts focus from VR headsets to smart glasses and AI initiatives.</p>
+        <div class="card-meta">
+            <span>Aug 21, 2026</span>
+            <a href="trending/apple-vision-pro-layoffs-2026.html" class="card-tag">Tech</a>
+        </div>
+    </article>
+</div>
+
+<h2 class="section-title">Evergreen Hubs</h2>
+<div class="grid">
+    <article class="card" onclick="window.location.href='hubs/crypto-market.html'">
+        <h3>Crypto Market Today</h3>
+        <p>Daily Bitcoin, Ethereum, and altcoin prices with market analysis.</p>
+        <span class="card-tag">Permanent</span>
+    </article>
+    
+    <article class="card" onclick="window.location.href='hubs/tech-news.html'">
+        <h3>Tech News Hub</h3>
+        <p>AI, gadgets, startups, and innovation coverage.</p>
+        <span class="card-tag">Permanent</span>
+    </article>
+    
+    <article class="card" onclick="window.location.href='hubs/gaming-updates.html'">
+        <h3>Gaming Updates</h3>
+        <p>Esports, releases, reviews, and tournament coverage.</p>
+        <span class="card-tag">Permanent</span>
+    </article>
+    
+    <article class="card" onclick="window.location.href='hubs/health-wellness.html'">
+        <h3>Health & Wellness</h3>
+        <p>Medical news, fitness tips, and wellness guides.</p>
+        <span class="card-tag">Permanent</span>
+    </article>
+    
+    <article class="card" onclick="window.location.href='hubs/sports-highlights.html'">
+        <h3>Sports Highlights</h3>
+        <p>Scores, results, tournaments, and expert analysis.</p>
+        <span class="card-tag">Permanent</span>
+    </article>
+</div>
+    
+    <footer>
+        <p>&copy; 2026 TrendVault — All Rights Reserved</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> • <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
+
         };
     </script>
     
@@ -57,15 +217,15 @@
     <div class="container">
         <div class="ad-banner">
             <script>
-  atOptions = {
-    'key' : '4bbcc74b0633e3b922905cf08e41dcfd',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/4bbcc74b0633e3b922905cf08e41dcfd/invoke.js"></script>
+                atOptions = {
+                    'key' : '4bbcc74b0633e3b922905cf08e41dcfd',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+     <script src="https://www.highrevenueformat.com/4bbcc74b0633e3b922905cf08e41dcfd/invoke.js"></script>
      </div>
         
 <h2 class="section-title">Today's Top Trends</h2>
